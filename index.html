@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetha's Portfolio</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .navbar {
+            background-color: #4A4E69;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #ddd;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        
+        .hero {
+    height: 100vh; 
+    background: url('https://i.ibb.co/R7dQ5b5/419294804d64.jpg') 
+                no-repeat center center; 
+    background-size: cover;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px; 
+    color: #fff; 
+}
+
+
+        .hero .name {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .hero .blog {
+            text-align: right;
+            font-size: 1.5rem;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Tasks Section */
+        .tasks-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tasks-list li {
+            margin-bottom: 10px;
+        }
+
+        .tasks-list a {
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .tasks-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Achievements, About, and Projects */
+        section {
+            background-color: black; 
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .list-group-item {
+            background-color:white;
+            color:black;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: black;
+            color: #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero .name {
+                font-size: 2rem;
+            }
+
+            .hero .blog {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 20px 0;
+            }
+        }
+
+       
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+        #contact {
+    padding: 40px 0;
+    background-color: black; 
+    color: #fff; 
+    text-align: center; 
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Sangeetha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tasks">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+ 
+    <section id="home" class="hero">
+        <div>
+            <div class="name">
+                Hi, I'm Sangeetha Electronics and Communication Engineer | Aspiring Developer
+            </div>
+            <div class="contact-btn">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    
+        
+   
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p>
+            About Me
+            Hello, I’m Sangeetha, an aspiring software developer and final-year Electronics and Communication Engineering (ECE) student from Thoothukudi, Tamil Nadu. My journey has been driven by a passion for technology and a relentless pursuit of solutions that make a difference. From participating in hackathons to honing my coding skills and working on diverse projects, I strive to merge creativity with technical expertise.
+
+            With a strong foundation in software development, I’m always seeking opportunities to expand my knowledge, develop innovative solutions, and collaborate with like-minded individuals. I am eager to step into the tech world as a developer who is not only equipped with problem-solving skills but also committed to continuous learning and growth. 
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2>My Projects and Assignments</h2>
+        <div class="row g-4">
+            <!-- Project Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.U3B7kkuA6xF75NkR5zON7AHaEK&pid=Api&P=0&h=180" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">MSME Banking Website</h5>
+                        <p class="card-text">I developed the frontend for a consultancy project aimed at empowering the MSME (Micro, Small, and Medium Enterprises) banking sector. The project focused on creating a user-friendly and visually appealing interface to streamline banking operations and enhance the user experience for MSMEs.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.VNytYNihCm5qaOeASDbasAHaEn&pid=Api&P=0&h=180" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">JAA Quiz Website</h5>
+                        <p class="card-text">I designed and developed a comprehensive quiz website aimed at educating users about the MSME sector. This project was crafted to enhance knowledge and engagement with interactive quizzes that test users on various aspects of MSMEs</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.y9L-dSMDLzR1vjzsfohjiwHaDi&pid=Api&P=0&h=180" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Railway Reservation</h5>
+                        <p class="card-text">I developed a comprehensive Railway Reservation System as part of a web-based project aimed at simplifying and digitizing the process of booking train tickets. The system was designed to provide users with a seamless experience for searching train schedules, booking tickets, and managing reservations.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasks Section -->
+    <section id="tasks" class="container my-5">
+        <h2>My Tasks</h2>
+        <ul class="tasks-list">
+            <li>
+                <a href="https://ibb.co/kS8BwcW" id="task1">Registration Form</a>
+            </li>
+            <li>
+                <a href="https://ibb.co/t8kFN0x" id="task2">Css- Barber</a>
+            </li>
+            <li>
+                <a href="https://ibb.co/bRcKdBH" id="task3">NGO</a>
+            </li>
+            <li>
+                <a href="https://ibb.co/w6ypP8C" id="task4">Primary School</a>
+            </li>
+            <li>
+                <a href="https://ibb.co/BnK6WrS" id="task5">Chat Box</a>
+            </li>
+            <li>
+                <a href="https://ibb.co/XLCsqvh" id="task6">Bootstrap Carousel</a>
+            </li>
+            <li>
+                <a href="https://i.ibb.co/cQYJmgM/b51b985a2184.png" id="task7">Favourite Places</a>
+            </li>
+            <li>
+                <a href="https://i.ibb.co/52Mp6q3/45f89be93594.png" id="task8">Covid Page</a>
+            </li>
+            
+                <li>
+                    <a href="https://i.ibb.co/X2b0Rd3/f602f6a10662.png" id="task9">Cricket Page</a>
+                </li>
+                <li>
+                    <a href="https://i.ibb.co/3s1fpNm/84ba2978034d.png" id="task10">Css Investing Website</a>
+                </li>
+                <li>
+                    <a href="https://i.ibb.co/Q9chLrM/9d95b3600bd0.png" id="task11">Trending Blogs</a>
+                </li>
+                
+                
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container my-5">
+        <h2>Achievements</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item">Department Topper</a>
+            <a href="#" class="list-group-item">School Topper</a>
+            <a href="#" class="list-group-item">Stars Of Maatram Award</a>
+            <a href="#" class="list-group-item">Best Performer during Internship at Cybernaut</a>
+            <a href="#" class="list-group-item">Solved 100 Problems in Leetcode and GFG</a>
+
+        </div>
+    </section>
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <p>Email: sangeetha452muthu495@gmail.com</p>
+        <p>Phone: +91-7305683884</p>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Sangeetha. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
